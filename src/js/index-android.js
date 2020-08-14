@@ -110,9 +110,9 @@ inAppPurchase.restorePurchases = () => {
         arr = purchases.map((val) => {
           return {
             productId: val.productId,
-            state : val.state,
+            state : val.state || val.purchaseState,
             transactionId: val.orderId,
-            date : val.date,
+            date : val.date || val.purchaseDate,
             type : val.type,
             productType : val.type,
             signature: val.signature,
