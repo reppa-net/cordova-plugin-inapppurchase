@@ -200,7 +200,7 @@ inAppPurchase.restorePurchases = function () {
           productId: val.productId,
           state: val.state || val.purchaseState,
           transactionId: val.orderId,
-          date: val.date || val.purchaseDate,
+          date: val.date || val.purchaseTime,
           type: val.type,
           productType: val.type,
           signature: val.signature,
