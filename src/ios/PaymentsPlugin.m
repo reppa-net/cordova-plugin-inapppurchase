@@ -107,6 +107,8 @@
                                  @"productId": NILABLE(transaction.payment.productIdentifier),
                                  @"date": NILABLE(transactionDateString),
                                  @"transactionId": NILABLE(transaction.transactionIdentifier),
+                                 @"originalTransactionId": NILABLE(transaction.originalTransaction.transactionIdentifier),
+                                 @"receipt": [[NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]] base64EncodedStringWithOptions:0],
                                  @"transactionState": NILABLE([NSNumber numberWithInteger:transaction.transactionState])
                                  }];
     }

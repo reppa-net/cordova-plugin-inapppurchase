@@ -97,6 +97,8 @@ inAppPurchase.restorePurchases = () => {
           productId     : val.productId,
           date          : val.date,
           transactionId : val.transactionId,
+          originalTransactionId: val.originalTransactionId,
+          receipt: val.receipt,
           state         : val.transactionState,
         };
       });
